@@ -27,4 +27,4 @@ En el apartado ## 2. Flujo debes cargar la imagen flujo.png (ya sea con formato 
 
 4.- En el apartado ## 3. Descriptivos deben incorporar una tabla simple de un tema interesante para ustedes, ademas deben agregar una imagen llamada grafico01.jpg (es una imágen de un grafico a tu elección). Esta imagen la puedes incorporar en formato Markdown o con chunks. Deja una breve explicación de ese gráfico y tabla, intenta utilizar lenguaje Markdown.
 
-- Nota: Solo se aceptaran trabajos hasta el lunes 31 de marzo
+- Nota: Solo se aceptaran trabajos hasta el miercoles 02 de abril
