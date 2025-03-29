@@ -1,0 +1,60 @@
+---
+title: "Tarea N°1 - Estadistica III - Universidad Alberto Hurtado"
+subtitle: "Profesor: Mauricio Carrasco - Ayudante: Vicente Diaz "
+author: "Ignacia Castillo Soto "
+date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output: html_document
+---
+
+## 1.- Carga de paquetes
+
+```{r paquetes, include=FALSE}
+
+library(pacman)
+
+pacman::p_load (tidyverse)
+
+```
+
+En el caso de "pacman" sirve para evitar el choque de paquetes facilitando su gestión y administración; y "tidyverse" es una colección de diferentes paquetes que sirve para editar, manipular y visualizar datos (por ej. seleccionar variables) y también importar y exportar bases de datos en diferentes formatos (ej. ".sav", ".dta").
+
+
+## 2.- Flujo 
+
+![](./input/imagenes/flujo.png)
+Un flujo de trabajo sirve para organizar los diferentes tipos de archivos y datos que vayamos generando a medida que vamos avanzando en un proyecto, en este podemos encontrar tres carpetas:
+
+- **input/**: acá van los datos iniciales sin manipular, bases de datos (ejemplo: .csv; .sav; .dta), archivos extraidos de internet y diferentes documentos que utilizamos como base en un trabajo (ejemplo: .doc; .pdf)
+
+- **R/**: En esta carpeta están todos nuestros códigos y procesamientos o procedimientos (ejemplo: .R) o documentos reproducibles (ejemplo: .Rmd)
+
+- **output/**: En esta van los datos que ya fueron procesados por nosotros, las mismas bases manipuladas (ejemplo: .csv; .sav; .dta), tablas, graficos y figuras (.png; .xlsx)
+
+Por último, está el archivo ".Rproject", que actuará como un directorio de las tres carpetas mencionadas anteriormente, manteniendo el entorno de trabajo organizado.
+
+## 3.- Descriptivos
+
+### Duración real de las carreras en Chile
+
+En Chile existe una disonancia entre la duración formal y la duración real de los programas educativos, según la Subsecretaria de la Educación Superior (SES) los estudiantes en promedio demoran un tercio más de lo esperado en obtener su título
+
+El nuevo Informe de Duración Real y Sobreduración de las carreras del Servicio de Información de Educación Superior (SIES), revela que en 2022 quienes se titularon de carreras regulares de Pregrado demoraron en promedio 10,1 semestres en obtener su título, los de Posgrado 5,9 semestres promedio, y los de Postítulo 2,6 semestres, además de otros datos como podemos visualizar en el siguiente gráfico:
+
+![](./input/imagenes/grafico01.jpg)
+
+*Fuente: Informe de Duración Real y Sobreduración de las carreras (2022)*
+
+En 2022 los más afectados por la duración en exceso fueron los profesionales con licenciatura teniendo un exceso de duración de 3 semestres, si analizamos los datos por género damos cuenta que los hombres tienen una duración promedio de estudios en educación superior de 10,6 semestres versus los 9,8 en mujeres. 
+En términos de Duración Real y Duración en Exceso por áreas de conocimiento, las carreras de Derecho, Ciencias Básicas, Agropecuaria y Salud son las que presentan mayores duraciones tanto reales como en exceso, destacándose Derecho con 6 semestres adicionales y Ciencias Básicas con 4,9 semestres.
+
+La Sobreduración, otro indicador presente en el informe de la SIES, mide el tiempo extra que los estudiantes tardan en obtener su título, este es especialmente alto en Posgrado (51,5%) y Postítulo (47,9%). En las universidades, las carreras con mayor sobreduración incluyen Derecho (58,1%) y Medicina Veterinaria (46,8%), mientras que en los Institutos Profesionales (IP) y Centros de Formación Técnica (CFT), las carreras de Técnico en Mecánica Automotriz destacan con altas tasas de sobreduración, llegando al 82% en CFT.
+
+## Bibliografía
+
+> [Fuente 1: Subsecretaría de Educación Superior](https://educacionsuperior.mineduc.cl/2023/08/08/las-y-los-estudiantes-chilenos-demoran-un-tercio-mas-de-lo-esperado-en-obtener-su-titulo/)
+
+> [Fuente 2: SIES 2022]( "https://www.mifuturo.cl/wp-content/uploads/2023/08/Duracion_Real_y_Sobreduracion_de_las_carreras_SIES_2023.pdf")
+
+
+
+
